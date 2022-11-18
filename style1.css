@@ -1,0 +1,53 @@
+ button{
+    background-color:black;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+    font-size:25px;
+    cursor:pointer;
+transition-duration: 300ms;
+transition-delay:1s;
+transition-timing-function:cubic-bezier(0.4,-0.18, 0.39, 0.56);
+transition-property: background-color; }
+    button:hover{
+        background-color: blueviolet;
+        color:black;
+        /* transition-delay:1s; */
+        /* transition-duration: 1s; */
+    }
+
+
+
+    /* ball animation start*/
+    .box{
+        background-color:peru;
+        height: 100vh;
+        width: 100vw;
+
+    }
+    .ball{
+        background-color: indigo;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+
+    }
+    .ball:hover{
+        animation:move 5s ease-in-out  infinite;
+
+    }
+    @keyframes move{
+        25%{
+            transform: translate(700px);
+        }
+        50%{transform:translate(0,200px);
+
+        }
+        75%{
+            transform: translate(700px,200px);
+        }
+        99%{transform:translate(0,500px);
+        }
+    }
+
+    /* ball animation end */
